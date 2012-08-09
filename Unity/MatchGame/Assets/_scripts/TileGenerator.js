@@ -49,11 +49,15 @@ var timeUp = false;
 function Start()
 {
 	Camera.main.transform.position = Vector3(2.25, 2.25, -10);
+	
+	RandFuncs.Shuffle(tileObjects);
+	
 	for (var i = 0; i < numberOfTiles; i++)
 	{
 		Instantiate (tileObjects[i], tileLocations[i], Quaternion.identity);
 	}
 }
+
 
 function Update ()
 {

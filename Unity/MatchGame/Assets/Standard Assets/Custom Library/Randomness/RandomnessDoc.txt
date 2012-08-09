@@ -1,0 +1,28 @@
+Randomness - a randomising library for Unity
+
+This library consists of two classes. The RandFuncs class is a collection of routines that simplify common randomisation tasks. The FastSample class is similar to the Sample function in RandFuncs, but optimised for the case where the distribution is very large or will be used very frequently.
+
+
+RandFuncs
+
+Indices - this function is very simple. It creates an array of n elements whose values are the integers  from 0 to n - 1. Thus, the value of each element is equal to its index (ie, arr[0] == 0, arr[1] == 1, etc). This is useful in combination with the Shuffle function.
+
+Rnd - generate a random float value in the range 0..1. This is used internally in the other functions. It is defined purely as a "wrapper" function, to make it easy to replace Unity's own random number generator with something else. The significance of this is that some simulation work requires the use of RNGs with specific statistical properties.
+
+RndRange - generate a random integer in the range first..last-1. Similar to Rnd, this is just a wrapper for Unity's Random.Range.
+
+Shuffle - this function re-orders the integer array passed to it. If the array is created with the Indices function, it can be used to create a random ordering of array indices. This could be useful for shuffling a deck of cards or questions, for example. It is also sometimes necessary to shuffle the result of the SampleRemove function.
+
+Sum - this function takes an array of integers or floats and returns the sum of the values. This may be useful in its own right, but it is most likely to be used to find the total value for the Sample function.
+
+Sample - choose a value at random according to the array of probabilities passed in. These probabilities are relative and need not add up to one, but the total is required. This can be passed as a parameter or, if it is omitted, the function will calculate the total itself. This function has many uses. Idle animations can be chosen with different probabilities, so that the character normally just breathes, but occasionally yawns or waves, etc. Enemies can be made to target different player characters randomly, but be more likely to attack the weakest or most important players. In general, there are many things can be chosen purely at random, but look more natural if they occur with different probabilities.
+
+SampleRemove - choose a number of values from the specified range without replacement. That is to say, each value can appear in the result at most once. A typical example of the use of this function is to generate enemies randomly at spawn points, but never two of them at the same point. Note that although the results are randomly chosen, they will occur in numerical order in the array. Use the shuffle function if you need to scramble the order of the results array.
+
+Dump - convert an array of integers or floats to a string representation. This is very handy for testing and debugging.
+
+
+
+FastSample
+
+This class implements sampling with replacement (like the Sample function in the RandFuncs class) but preprocesses the data to make the actual sampling operations very fast. The preprocessing step takes time proportional to the size of the distribution (ie, the number of options available). Once this step is complete, the samples are performed in constant time, regardless of how large the distribution is. FastSample is worth using when the distribution is large, rarely or never changes, and when many samples must be taken quickly, during a frame update, say. However, the preprocessing stage is considerably slower than a single call to RandFuncs.Sample, so FastSample is inefficient when only a few samples will be taken from the distribution.
