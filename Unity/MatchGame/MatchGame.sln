@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 
+Project("{C00D785A-24FB-7A49-2508-5788BFCFAA14}") = "MatchGame", "Assembly-CSharp-firstpass.csproj", "{18664CE1-7521-E01A-773C-E3808475BD1F}"
+EndProject
 Project("{C00D785A-24FB-7A49-2508-5788BFCFAA14}") = "MatchGame", "Assembly-UnityScript-firstpass.unityproj", "{CD0A0E84-7D73-CBB6-C50D-D42CC99797A8}"
 EndProject
 Project("{C00D785A-24FB-7A49-2508-5788BFCFAA14}") = "MatchGame", "Assembly-UnityScript.unityproj", "{DDEDDDEA-D172-B982-5F7B-B34AE06A6800}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18664CE1-7521-E01A-773C-E3808475BD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18664CE1-7521-E01A-773C-E3808475BD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18664CE1-7521-E01A-773C-E3808475BD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18664CE1-7521-E01A-773C-E3808475BD1F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CD0A0E84-7D73-CBB6-C50D-D42CC99797A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CD0A0E84-7D73-CBB6-C50D-D42CC99797A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD0A0E84-7D73-CBB6-C50D-D42CC99797A8}.Release|Any CPU.ActiveCfg = Release|Any CPU

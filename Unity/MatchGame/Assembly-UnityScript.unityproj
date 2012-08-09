@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\_scripts\TileGenerator.js" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets\Custom Library\Randomness\RandomnessDoc.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">

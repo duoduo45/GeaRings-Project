@@ -1,14 +1,18 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 
-
+Project("{C00D785A-24FB-7A49-2508-5788BFCFAA14}") = "MatchGame", "Assembly-CSharp-firstpass-vs.csproj", "{18664CE1-7521-E01A-773C-E3808475BD1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{18664CE1-7521-E01A-773C-E3808475BD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18664CE1-7521-E01A-773C-E3808475BD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18664CE1-7521-E01A-773C-E3808475BD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18664CE1-7521-E01A-773C-E3808475BD1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
