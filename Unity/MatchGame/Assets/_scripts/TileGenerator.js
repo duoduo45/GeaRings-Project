@@ -20,14 +20,14 @@ var scoreTxt:String;
 
 var tileLocations = new Array
 (
-	Vector3(0, 0, 0), Vector3(1.5, 0, 0),
-	Vector3(3 ,0, 0), Vector3(4.5, 0, 0),
-	Vector3(0, 1.5, 0), Vector3(1.5, 1.5, 0),
-	Vector3(3, 1.5, 0), Vector3(4.5, 1.5, 0),
-	Vector3(0, 3, 0), Vector3(1.5, 3, 0),
-	Vector3(3, 3, 0), Vector3(4.5, 3, 0),
-	Vector3(0, 4.5, 0), Vector3(1.5, 4.5, 0),
-	Vector3(3, 4.5, 0), Vector3(4.5, 4.5, 0)
+	Vector3(0, -0.3, 0), Vector3(1.5, -0.3, 0),
+	Vector3(3, -0.3, 0), Vector3(4.5, -0.3, 0),
+	Vector3(0, 1.2, 0), Vector3(1.5, 1.2, 0),
+	Vector3(3, 1.2, 0), Vector3(4.5, 1.2, 0),
+	Vector3(0, 2.7, 0), Vector3(1.5, 2.7, 0),
+	Vector3(3, 2.7, 0), Vector3(4.5, 2.7, 0),
+	Vector3(0, 4.2, 0), Vector3(1.5, 4.2, 0),
+	Vector3(3, 4.2, 0), Vector3(4.5, 4.2, 0)
 );
 
 private var startTime;
