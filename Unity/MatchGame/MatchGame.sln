@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
+Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
 Project("{C00D785A-24FB-7A49-2508-5788BFCFAA14}") = "MatchGame", "Assembly-CSharp-firstpass.csproj", "{18664CE1-7521-E01A-773C-E3808475BD1F}"
@@ -29,5 +29,23 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	
+						GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
 EndGlobal
